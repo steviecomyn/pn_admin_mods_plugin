@@ -1,0 +1,208 @@
+:root {
+    --menu-bg: #202020;
+    --menu-hover-bg: #353535;
+    --menu-hover-text: #92c13e;
+    --menu-item-focus: #83ae38;
+    --menu-item-submenu: #353535;
+    --menu-woo-icon: '\f07a';
+}
+
+/* Changes the Woo! Icon */
+#adminmenu #toplevel_page_woocommerce .menu-icon-generic div.wp-menu-image::before {
+    content: var(--menu-woo-icon);
+    font-family: 'FontAwesome' !important;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+/* We only want to modify the desktop atm */
+@media only screen and (min-width: 783px) { 
+
+    #wpadminbar {
+        background-color: var(--menu-bg);
+
+        #wp-admin-bar-pn_custom_logo {
+            width: 160px;
+
+            a {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    #wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
+        display: none;
+    }
+
+    #wpadminbar .ab-top-menu>li.hover>.ab-item,
+    #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+    #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
+    #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+        background: var(--menu-hover-bg);
+        color: var(--menu-hover-text);
+    }
+
+    #wpadminbar .menupop .ab-sub-wrapper,
+    #wpadminbar .shortlink-input {
+        background: var(--menu-hover-bg);
+    }
+
+    #wpadminbar .ab-top-menu>li.hover>.ab-item,
+    #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+    #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
+    #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+        background: var(--menu-hover-bg);
+        color: var(--menu-hover-text);
+    }
+
+    #wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label,
+    #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label,
+    #wpadminbar>#wp-toolbar li.hover span.ab-label {
+        color: var(--menu-hover-text);
+    }
+
+    #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover>a,
+    #wpadminbar .quicklinks .menupop ul li a:focus,
+    #wpadminbar .quicklinks .menupop ul li a:focus strong,
+    #wpadminbar .quicklinks .menupop ul li a:hover,
+    #wpadminbar .quicklinks .menupop ul li a:hover strong,
+    #wpadminbar .quicklinks .menupop.hover ul li a:focus,
+    #wpadminbar .quicklinks .menupop.hover ul li a:hover,
+    #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:focus,
+    #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:hover,
+    #wpadminbar li #adminbarsearch.adminbar-focused:before,
+    #wpadminbar li .ab-item:focus .ab-icon:before,
+    #wpadminbar li .ab-item:focus:before,
+    #wpadminbar li a:focus .ab-icon:before,
+    #wpadminbar li.hover .ab-icon:before,
+    #wpadminbar li.hover .ab-item:before,
+    #wpadminbar li:hover #adminbarsearch:before,
+    #wpadminbar li:hover .ab-icon:before,
+    #wpadminbar li:hover .ab-item:before,
+    #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+    #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
+        color: var(--menu-hover-text);
+    }
+
+    #adminmenu,
+    #adminmenu .wp-submenu,
+    #adminmenuback,
+    #adminmenuwrap {
+        background-color: var(--menu-bg);
+    }
+
+    #adminmenu .wp-submenu a:focus,
+    #adminmenu .wp-submenu a:hover,
+    #adminmenu a:hover,
+    #adminmenu li.menu-top>a:focus {
+        color: var(--menu-hover-text);
+    }
+
+    #adminmenu li a:focus div.wp-menu-image:before,
+    #adminmenu li.opensub div.wp-menu-image:before,
+    #adminmenu li:hover div.wp-menu-image:before {
+        color: var(--menu-hover-text);
+    }
+
+    #adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, #adminmenu li>a.menu-top:focus {
+        background-color: var(--menu-hover-bg);
+        color: var(--menu-hover-text);
+    }
+
+    #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+        border-right-color: var(--menu-bg);
+    }
+
+    #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+        background-color:var(--menu-item-focus);
+    }
+
+    #adminmenu .wp-has-current-submenu .wp-submenu {
+        background-color: var(--menu-item-submenu);
+    }
+
+    #collapse-button {
+        color: #fff;
+    }
+
+    #collapse-button:hover {
+        color: var(--menu-hover-text);
+        background: var(--menu-hover-bg);
+    }
+
+    #collapse-button:focus {
+        color: var(--menu-hover-text);
+    }
+
+    #wp-admin-bar-pn_custom_logo:hover a.ab-item {
+        background-color: var(--menu-bg)!important;
+    }
+
+}
+
+
+// Pagenorth News Feed Widget Styling
+#pagenorth_news_feed {
+    .inside {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .help-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #a2c617;
+        padding: .6rem 1rem;
+        border-radius: 4px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            background-color: #8fad15;
+        }
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            padding: .5rem 1rem;
+            border-top: 1px solid #dfdfdf;
+            transition: all .2s ease-in-out;
+            margin: 0;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+
+            a {
+                display: block;
+                color: #253361;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .rss-date {
+        color: #666;
+        margin-bottom: 4px;
+    }
+
+    .pn-rss-header {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    
+    .pn-rss-header-wrapper {
+        padding: 100px .6rem 0 .7rem;
+
+        p {
+            width: 70%;
+        }
+    }
+}

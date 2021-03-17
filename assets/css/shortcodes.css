@@ -1,0 +1,33 @@
+.powered_by_pn {
+    display: block;
+    padding: .4rem .6rem;
+    transition: all .2s ease-in-out;
+}
+
+.powered_by_pn:hover {
+    transform: translateY(-2px);
+}
+
+.powered_by_pn img {
+    width: 20px;
+    height: auto;
+    margin-left: 6px;
+    filter: grayscale(100%);
+}
+
+.powered_by_pn:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.pn_link_light {
+    color: #222;
+}
+
+.pn_link_dark {
+    color: #eee;
+}
+
+.powered_by_pn:hover {
+    color: #9DBF1C;
+}
