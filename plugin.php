@@ -3,7 +3,7 @@
 Plugin Name:	0_PageNorth - Login screen/Admin area Customisation
 Plugin URI:		https://www.pagenorth.co.uk
 Description:	Adds customisations to the Login screen and admin area.
-Version:		2.0
+Version:		2.0.1
 Author:			PageNorth ltd
 Author URI:		https://www.pagenorth.co.uk
 License:		GPL-2.0+

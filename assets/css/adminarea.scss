@@ -14,7 +14,26 @@
     font-weight: 900;
     width: 20px;
     height: 20px;
+    line-height: 32px;
     font-size: 20px;
+}
+
+a.toplevel_page_woocommerce div.wp-menu-image {
+    background: none !important;
+}
+
+a.toplevel_page_woocommerce div.wp-menu-image::before {
+    content: var(--menu-woo-icon);
+    font-family: 'FontAwesome' !important;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+a.toplevel_page_woocommerce div.wp-menu-image::before {
+    line-height: 32px !important;
 }
 
 /* We only want to modify the desktop atm */

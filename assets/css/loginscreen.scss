@@ -64,6 +64,7 @@ body {
 
         .wp-pwd {
             position: relative;
+            margin-bottom: 1rem;
 
             .button.wp-hide-pw {
                 background: 0 0;
@@ -140,10 +141,12 @@ body {
         }
                 
     }
-}
 
-div.message {
-	display: none;
+    p.message {
+        background: #deecc5;
+        padding: .6em;
+        border-radius: 3px;
+    }
 }
 
 input:-webkit-autofill,

@@ -77,6 +77,7 @@ body div#login input[type=text]:focus {
 
 body div#login .wp-pwd {
   position: relative;
+  margin-bottom: 1rem;
 }
 
 body div#login .wp-pwd .button.wp-hide-pw {
@@ -159,8 +160,10 @@ body div#login p#nav a:hover {
   background-color: var(--button_highlight_color);
 }
 
-div.message {
-  display: none;
+body p.message {
+  background: #deecc5;
+  padding: .6em;
+  border-radius: 3px;
 }
 
 input:-webkit-autofill,
